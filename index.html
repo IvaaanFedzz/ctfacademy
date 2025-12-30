@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags MEJORADOS con Long-Tail Keywords -->
+    <title>Cómo Empezar en CTF sin Experiencia: Guía Completa para Principiantes 2025</title>
+    <meta name="description" content="Aprende CTF paso a paso sin experiencia previa. Guía completa de Capture The Flag para estudiantes: plataformas, herramientas, sistemas operativos y vulnerabilidades web explicadas en español.">
+    <meta name="keywords" content="CTF para principiantes, cómo empezar en CTF sin experiencia, CTF hacking guía completa en español, CTF para estudiantes SMR, CTF web vulnerabilidades explicadas, Capture The Flag tutorial, TryHackMe español, Hack The Box principiantes">
+    <meta name="author" content="CTF Academy - Educación en Ciberseguridad">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://ctfacademy.github.io/">
+    
+    <!-- Open Graph Mejorado -->
+    <meta property="og:title" content="Cómo Empezar en CTF sin Experiencia: Guía Completa 2025">
+    <meta property="og:description" content="Tutorial paso a paso de CTF para principiantes: aprende hacking ético con plataformas gratuitas, herramientas y consejos prácticos.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://ctfacademy.github.io/">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="CTF Academy">
+    <meta property="article:published_time" content="2025-01-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-01-15T00:00:00+00:00">
+    <meta property="article:author" content="CTF Academy">
+    <meta property="article:section" content="Ciberseguridad">
+    <meta property="article:tag" content="CTF, Hacking Ético, Ciberseguridad, Principiantes">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cómo Empezar en CTF sin Experiencia: Guía Completa">
+    <meta name="twitter:description" content="Aprende CTF paso a paso: plataformas, herramientas, sistemas operativos y vulnerabilidades web para principiantes.">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Cómo Empezar en CTF sin Experiencia: Guía Completa para Principiantes 2025",
+      "description": "Guía completa de Capture The Flag (CTF) para estudiantes y principiantes en ciberseguridad: plataformas, herramientas, sistemas operativos y consejos prácticos.",
+      "image": "https://ctfacademy.github.io/og-image.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "CTF Academy",
+        "url": "https://ctfacademy.github.io"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CTF Academy",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ctfacademy.github.io/logo.png"
+        }
+      },
+      "datePublished": "2025-01-15",
+      "dateModified": "2025-01-15",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ctfacademy.github.io/"
+      },
+      "keywords": "CTF, Capture The Flag, hacking ético, ciberseguridad, TryHackMe, Hack The Box, principiantes",
+      "articleSection": "Ciberseguridad",
+      "inLanguage": "es-ES"
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es un CTF en ciberseguridad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un CTF (Capture The Flag) es una competencia de ciberseguridad donde los participantes resuelven desafíos técnicos para encontrar 'banderas' (flags) ocultas. Es la forma más efectiva de aprender hacking ético de manera práctica y legal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Es legal practicar CTF?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, los CTF son completamente legales cuando se practican en plataformas autorizadas como TryHackMe, Hack The Box, OverTheWire o PicoCTF. Estas plataformas proporcionan entornos controlados específicamente diseñados para aprendizaje. NUNCA practiques técnicas de hacking en sistemas sin autorización explícita."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué necesito para empezar en CTF sin experiencia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para empezar necesitas: 1) Una computadora con al menos 8GB RAM, 2) Linux (Kali o Ubuntu) en máquina virtual, 3) Conocimientos básicos de terminal Linux, 4) Cuenta gratuita en TryHackMe o OverTheWire, 5) Paciencia y ganas de aprender. No necesitas ser programador experto para comenzar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto tiempo tarda aprender CTF?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Puedes resolver tu primer CTF básico en 1-2 semanas estudiando 1-2 horas diarias. Para nivel intermedio necesitas 6-12 meses de práctica constante. Los profesionales entrenan durante años, pero puedes empezar a aplicar conocimientos en pentesting junior después de 6 meses de práctica dedicada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuál es la mejor plataforma CTF para principiantes absolutos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TryHackMe es la mejor plataforma para principiantes absolutos porque ofrece tutoriales integrados, rutas de aprendizaje guiadas y laboratorios que funcionan directamente en el navegador sin necesidad de instalación. OverTheWire también es excelente para aprender comandos Linux desde cero."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito saber programar para hacer CTF?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No necesitas ser programador experto, pero conocimientos básicos de Python, Bash y conceptos de programación te ayudarán mucho. Muchos CTF de nivel básico pueden resolverse con herramientas existentes. A medida que avances, aprenderás programación de forma natural resolviendo desafíos."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://ctfacademy.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guía CTF",
+          "item": "https://ctfacademy.github.io/#que-es"
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #00ff88;
+            --secondary-color: #0099ff;
+            --dark-bg: #0a0e27;
+            --card-bg: #141b3d;
+            --text-primary: #e4e4e7;
+            --text-secondary: #a1a1aa;
+            --accent: #ff0055;
+            --gradient: linear-gradient(135deg, #00ff88 0%, #0099ff 100%);
+            --shadow: 0 10px 40px rgba(0, 255, 136, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            background: rgba(0, 255, 136, 0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: var(--primary-color);
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 255, 136, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        header.scrolled {
+            box-shadow: var(--shadow);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+        
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary-color);
+            transition: all 0.3s ease;
+        }
+        
+        .hero {
+            margin-top: 80px;
+            padding: 6rem 2rem 4rem;
+            text-align: center;
+            background: radial-gradient(circle at 50% 0%, rgba(0, 255, 136, 0.1), transparent 50%);
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 0.8s ease;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            animation: fadeInUp 0.8s ease 0.2s backwards;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--gradient);
+            color: var(--dark-bg);
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.8s ease 0.4s backwards;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        section {
+            margin-bottom: 5rem;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: var(--gradient);
+            border-radius: 2px;
+        }
+        
+        h3 {
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            color: var(--primary-color);
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+            color: var(--text-secondary);
+        }
+        
+        strong {
+            color: var(--text-primary);
+        }
+        
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 255, 136, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+            border-color: var(--primary-color);
+        }
+        
+        .card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .card h3 {
+            margin-top: 0;
+        }
+        
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+        
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.6;
+        }
+        
+        .platform-card {
+            display: flex;
+            gap: 2rem;
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(0, 255, 136, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .platform-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow);
+        }
+        
+        .platform-icon {
+            font-size: 3rem;
+            min-width: 80px;
+            text-align: center;
+        }
+        
+        .platform-content h3 {
+            margin-top: 0;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 153, 255, 0.1));
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .highlight-box p {
+            margin-bottom: 0;
+            color: var(--text-primary);
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border-left: 3px solid var(--primary-color);
+        }
+
+        .faq-question {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.8rem;
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        footer {
+            background: var(--card-bg);
+            padding: 3rem 2rem;
+            border-top: 1px solid rgba(0, 255, 136, 0.1);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .footer-section p, .footer-section a {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.8;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(0, 255, 136, 0.1);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: flex;
+            }
+            
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--card-bg);
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1rem;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            
+            .nav-links.active {
+                transform: translateX(0);
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .platform-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">🚩 CTF Academy</div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#que-es">Qué es CTF</a></li>
+                <li><a href="#tipos">Tipos</a></li>
+                <li><a href="#plataformas">Plataformas</a></li>
+                <li><a href="#sin-experiencia">Empezar desde Cero</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#sobre">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Cómo Empezar en CTF sin Experiencia: Guía Paso a Paso 2025</h1>
+        <p>Aprende Capture The Flag desde cero con esta guía completa para principiantes: plataformas gratuitas, herramientas, sistemas operativos y consejos prácticos en español</p>
+        <a href="#que-es" class="cta-button">Comenzar Ahora Gratis</a>
+    </section>
+
+    <div class="container">
+        <section id="que-es">
+            <h2>¿Qué es un CTF en Ciberseguridad? Explicación para Principiantes</h2>
+            
+            <p>Un <strong>CTF (Capture The Flag)</strong> es una competencia de ciberseguridad donde resuelves desafíos técnicos de hacking ético para encontrar "banderas" (flags) ocultas. Estas banderas son cadenas de texto únicas que demuestran que completaste un reto específico de seguridad informática.</p>
+            
+            <p>Los CTF son la forma más efectiva de <strong>aprender ciberseguridad de manera práctica</strong> porque simulas escenarios reales de pentesting en entornos 100% legales y controlados. Tanto universidades como empresas tech utilizan CTF para entrenar a sus profesionales de seguridad.</p>
+            
+            <div class="highlight-box">
+                <p><strong>📌 Dato importante:</strong> Los CTF nacieron en DEFCON 1996 y hoy son el estándar mundial para entrenar hackers éticos. Google, Facebook y Microsoft los usan en procesos de selección de personal de ciberseguridad.</p>
+            </div>
+
+            <h3>¿Para qué sirve practicar CTF? Beneficios Reales</h3>
+            <ul>
+                <li><strong>Aprendizaje 100% práctico:</strong> Explota vulnerabilidades reales en entornos legales controlados</li>
+                <li><strong>Preparación laboral:</strong> Desarrolla habilidades requeridas para pentester, analista SOC y roles de seguridad ofensiva</li>
+                <li><strong>Portfolio profesional:</strong> Demuestra tus capacidades técnicas de forma tangible ante empleadores</li>
+                <li><strong>Pensamiento crítico:</strong> Aprende a resolver problemas complejos creativamente bajo presión</li>
+                <li><strong>Networking valioso:</strong> Conecta con profesionales y reclutadores del sector ciberseguridad</li>
+                <li><strong>Certificaciones:</strong> Plataformas como HTB ofrecen certificados reconocidos internacionalmente</li>
+            </ul>
+
+            <h3>¿Por qué los CTF son tan importantes en ciberseguridad?</h3>
+            <p>Los CTF te enseñan a <strong>pensar como un atacante</strong>, habilidad esencial para defender sistemas empresariales. Ninguna certificación teórica (CEH, CompTIA Security+) te da esta experiencia práctica real.</p>
+            <ul>
+                <li>Cubren todas las áreas: explotación web, criptografía, análisis forense, ingeniería inversa, pwn</li>
+                <li>Aprendes herramientas profesionales: Burp Suite, Metasploit, Ghidra, Wireshark, SQLmap</li>
+                <li>Desarrollas metodologías de pentesting reconocidas (OWASP, PTES)</li>
+                <li>Preparas certificaciones profesionales como OSCP, eWPT, eCPPT de forma natural</li>
+            </ul>
+        </section>
+
+        <section id="tipos">
+            <h2>Tipos de CTF: Formatos y Categorías Explicadas para Estudiantes</h2>
+            
+            <p>Existen diferentes formatos de competencias CTF. Conocer las diferencias te ayuda a elegir por dónde empezar según tu nivel y objetivos profesionales.</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Jeopardy CTF</h3>
+                    <p>El formato más común y <strong>perfecto para principiantes sin experiencia</strong>. Presenta desafíos independientes organizados por categorías (web, crypto, forensics). Completas retos a tu ritmo y ganas puntos por cada bandera.</p>
+                    <p><strong>Plataformas:</strong> TryHackMe, PicoCTF, Root Me</p>
+                    <p><strong>Ideal para:</strong> Aprender a tu propio ritmo, explorar diferentes áreas</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">⚔️</div>
+                    <h3>Attack & Defense</h3>
+                    <p>Formato avanzado donde equipos <strong>defienden servidores propios mientras atacan los de competidores</strong>. Requiere conocimientos sólidos de seguridad ofensiva y defensiva simultáneamente.</p>
+                    <p><strong>Plataformas:</strong> DEFCON CTF, RuCTFE</p>
+                    <p><strong>Ideal para:</strong> Equipos experimentados, simular entornos empresariales</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">💻</div>
+                    <h3>Boot2Root (Máquinas Vulnerables)</h3>
+                    <p>Recibes una máquina virtual vulnerable y debes <strong>escalar privilegios desde usuario básico hasta root/administrador</strong>. Simula pentesting real de infraestructura empresarial.</p>
+                    <p><strong>Plataformas:</strong> Hack The Box, VulnHub, OffSec Proving Grounds</p>
+                    <p><strong>Ideal para:</strong> Preparar OSCP, aprender escalada de privilegios</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🔍</div>
+                    <h3>OSINT (Inteligencia de Fuentes Abiertas)</h3>
+                    <p><strong>Encuentra información usando solo fuentes públicas:</strong> redes sociales, registros de dominio, metadatos, búsquedas avanzadas. No requiere hacking técnico, ideal para principiantes absolutos.</p>
+                    <p><strong>Plataformas:</strong> Bellingcat, Trace Labs</p>
+                    <p><strong>Ideal para:</strong> Investigación digital, análisis de amenazas</p>
+                </div>
+            </div>
+
+            <h3>Categorías Principales de Desafíos CTF (Áreas de Especialización)</h3>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3>🌐 Web Exploitation</h3>
+                    <p><strong>La categoría #1 para principiantes.</strong> Explota vulnerabilidades web como SQL Injection, XSS, CSRF, LFI/RFI, SSRF, deserialización insegura. El 70% de los CTF incluyen retos web.</p>
+                    <p><strong>Herramientas:</strong> Burp Suite, SQLmap, OWASP ZAP</p>
+                </div>
+
+                <div class="card">
+                    <h3>🔐 Criptografía</h3>
+                    <p>Rompe cifrados débiles, analiza algoritmos, explota implementaciones incorrectas de RSA, AES y protocolos criptográficos. Requiere matemáticas básicas.</p>
+                    <p><strong>Herramientas:</strong> CyberChef, RsaCtfTool, Hashcat</p>
+                </div>
+
+                <div class="car
