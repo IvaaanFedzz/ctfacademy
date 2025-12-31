@@ -1,65 +1,88 @@
-CTF Academy 2026
+# CTF Academy 2026
 
-Plataforma web orientada al aprendizaje y práctica de ciberseguridad y Capture The Flag (CTF), desarrollada con un enfoque moderno y ligero mediante Vibe Coding.
+Plataforma web orientada al aprendizaje y la práctica de ciberseguridad y **Capture The Flag (CTF)**. El proyecto está concebido como una web estática moderna, ligera y eficiente, enfocada en ofrecer una experiencia clara tanto para estudiantes como para entusiastas de la seguridad informática.
 
-El proyecto está diseñado como una web estática, priorizando simplicidad, rendimiento y una experiencia de usuario clara.
+## 🌐 Demo
 
-🌐 Demo
+La aplicación se encuentra desplegada y accesible públicamente en:
 
-La aplicación se encuentra desplegada y accesible en el siguiente enlace:
+[https://ctfacademy2026.netlify.app/](https://ctfacademy2026.netlify.app/)
 
-https://ctfacademy2026.netlify.app/
+## 🎯 Objetivo del proyecto
 
-🚀 Tecnologías utilizadas
+CTF Academy 2026 nace con el objetivo de servir como base educativa y práctica para:
 
-HTML5 – Estructura y contenido semántico
+* Introducir conceptos fundamentales de ciberseguridad.
+* Facilitar el aprendizaje progresivo mediante retos tipo CTF.
+* Ofrecer una plataforma rápida, accesible y sin dependencias innecesarias.
 
-CSS3 – Estilos, diseño responsive y experiencia visual
+El enfoque prioriza la claridad técnica, el rendimiento y la facilidad de mantenimiento.
 
-JavaScript – Interactividad y lógica del lado cliente
+## 🚀 Tecnologías utilizadas
 
-Netlify – Hosting y despliegue continuo
+* **HTML5** – Estructura semántica y accesible.
+* **CSS3** – Diseño visual, estilos modernos y enfoque responsive.
+* **JavaScript (Vanilla)** – Interactividad y lógica del lado cliente.
+* **Netlify** – Hosting estático y despliegue continuo.
 
-🧠 Enfoque del proyecto
+## 🧠 Enfoque de desarrollo
 
-Este proyecto ha sido desarrollado utilizando el enfoque de Vibe Coding, priorizando:
+El proyecto ha sido desarrollado siguiendo la filosofía de **Vibe Coding**, priorizando:
 
-Código limpio y legible
+* Código limpio, legible y bien organizado.
+* Desarrollo ágil y creativo.
+* Simplicidad por encima de soluciones complejas.
+* Ausencia de frameworks o dependencias innecesarias.
+* Buenas prácticas en desarrollo frontend.
 
-Desarrollo ágil y creativo
+## 📦 Características principales
 
-Simplicidad sin dependencias innecesarias
+* Web estática rápida y ligera.
+* Diseño responsive compatible con dispositivos móviles y de escritorio.
+* Despliegue automático mediante Netlify.
+* Estructura de proyecto clara y fácilmente escalable.
+* Preparado para futuras ampliaciones (retos, niveles, rankings, etc.).
 
-Buenas prácticas en frontend
+## 🛠️ Instalación y uso en local
 
-📦 Características
+No se requieren dependencias ni configuraciones adicionales.
 
-Web estática rápida y ligera
+1. Clona el repositorio:
 
-Diseño responsive compatible con distintos dispositivos
+```bash
+git clone https://github.com/tu-usuario/ctf-academy-2026.git
+```
 
-Despliegue automático mediante Netlify
+2. Accede al directorio del proyecto:
 
-Estructura clara y fácil de mantener
+```bash
+cd ctf-academy-2026
+```
 
-🛠️ Instalación y uso local
+3. Abre el archivo `index.html` directamente en tu navegador.
 
-Si deseas ejecutar el proyecto en local:
+## 📁 Estructura del proyecto 
 
-Clona el repositorio:
+```text
+ctf-academy-2026/
+│── index.html
+│── css/
+│   └── styles.css
+│── js/
+│   └── main.js
+│── assets/
+│   └── images/
+│── README.md
+```
 
-git clone https://github.com/tu-usuario/tu-repositorio.git
+## 📌 Estado del proyecto
 
+El proyecto se encuentra actualmente en **fase inicial de desarrollo**. Se encuentra abierto a mejoras, optimización del diseño y la incorporación de nuevas funcionalidades orientadas al aprendizaje práctico de ciberseguridad.
 
-Accede al directorio del proyecto:
+## 🤝 Contribuciones
 
-cd tu-repositorio
+Las contribuciones, ideas y sugerencias son bienvenidas. Puedes abrir un *issue* o proponer cambios mediante un *pull request*.
 
+## 📄 Licencia
 
-Abre el archivo index.html en tu navegador.
-
-No se requieren dependencias adicionales.
-
-📌 Estado del proyecto
-
-El proyecto se encuentra en desarrollo / fase inicial y está abierto a mejoras y nuevas funcionalidades.
+Este proyecto se distribuye bajo una licencia de código abierto. Consulta el archivo `LICENSE` para más información.
